@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title>Andy's Web Shop</title>
+
+  <link rel="stylesheet" href="style.css"> 
+
+  <script type="text/javascript" src="formChecker.js" ></script>  
+</head>
+<body>
+  <h1>Andy's Web Shop</h1>
+
+  <form id="orderForm" action="customerBackend.php" method="POST">
+    <h2>For Sale</h2>
+      <table>
+        <thead>
+          <tr>
+            <th style="width:100px;">Quantity</th>
+            <th style="width:100px;">Price</th>
+            <th style="width:250px;">Item Name</th>
+            <th style="width:250px;">Item Picture</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="number" min="0" max="99" value="0" style="width:50px;" name="snuggie"></td>
+            <td>$29.99</td>
+            <td>Snuggie</td>
+            <td><img src="pics/snuggie.jpg"></td>
+          </tr>
+           <tr>
+            <td><input type="number" min="0" max="99" value="0" style="width:50px;" name="gold"></td>
+            <td>$2999.99</td>
+            <td>Gold</td>
+            <td><img src="pics/gold.jpg"></td>
+          </tr> 
+           <tr>
+            <td><input type="number" min="0" max="99" value="0" style="width:50px;" name="lint"></td>
+            <td>$0.99</td>
+            <td>Lint</td>
+            <td><img src="pics/lint.jpg"></td>
+          </tr> 
+        </tbody>
+      </table>
+
+    <h2>Shipping Selection</h2>
+      <input type="radio" name="shipping" value="free" required>Free 7-Day Shipping<br>
+      <input type="radio" name="shipping" value="overnight">$50.00 Overnight Shipping<br>
+      <input type="radio" name="shipping" value="threeday">$5.00 3-Day Shipping<br> 
+
+    <h2>Account Login</h2>
+      Username: <input type="email" name="email" required><br>
+      Password: <input type="password" name="password" required><br><br>
+
+    <input type="submit" value="Purchase">   <input type="button" onclick="clearForm()" value="Reset"><br>
+  </form>
+
+</body>
+</html>
+
