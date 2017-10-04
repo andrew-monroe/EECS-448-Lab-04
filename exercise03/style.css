@@ -1,0 +1,16 @@
+img {
+  width:200px;
+  height:150px;
+}
+
+th {
+  text-align:left;
+}
+
+table.receipt > thead > tr > th, table.receipt > tbody > tr > th {
+  background-color:#B9FFCD;
+}
+
+table.receipt > tbody > tr > td {
+  background-color:#D0C7FF;
+}
